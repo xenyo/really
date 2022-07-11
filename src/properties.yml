@@ -1,0 +1,55 @@
+# Compositing and Blending
+# CSS Animations
+# CSS Backgrounds and Borders
+# CSS Basic User Interface
+# CSS Box Model
+# CSS Charsets
+# CSS Colors
+# CSS Multi-column Layout
+# CSS Conditional Rules
+# CSS Counter Styles
+# CSS Device Adaptation
+# CSS Display
+# CSS Flexible Box Layout
+# CSS Fonts
+# CSS Fragmentation
+# CSS Generated Content
+# CSS Grid Layout
+# CSS Images
+# CSS Lists
+# CSS Logical Properties and Values
+# CSS Masking
+# CSS Miscellaneous
+# CSS Namespaces
+# CSS Paged Media
+# CSS Positioned Layout
+# CSS Ruby Layout
+# CSS Scroll Snap
+# CSS Scroll Snap Points
+# CSS Scrollbars
+# CSS selectors
+# CSS Shapes
+# CSS Table
+# CSS Text
+# CSS Text Decoration
+# CSS Transforms
+# CSS Transitions
+# CSS data types
+# CSS Custom Properties for Cascading Variables
+# CSS Writing Modes
+# Filter Effects
+animation:
+  - none
+display:
+  - block
+  - flex
+  - grid
+  - inline
+  - inline-block
+  - inline-flex
+  - inline-grid
+  - none
+  - table
+  - table-cell
+width:
+  - 100%

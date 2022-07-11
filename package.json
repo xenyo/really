@@ -1,0 +1,38 @@
+{
+  "name": "literally.css",
+  "version": "0.0.1",
+  "description": "CSS utility library that literally translates to CSS.",
+  "engines": {
+    "node": ">= 16"
+  },
+  "browserslist": "defaults",
+  "targets": {
+    "generator": {
+      "context": "node",
+      "distDir": "generator"
+    },
+    "css": {
+      "context": "browser",
+      "sourceMap": false
+    }
+  },
+  "scripts": {
+    "clean": "rimraf generator dist",
+    "build": "parcel build src/index.js --target generator",
+    "generate": "node generator/index.js",
+    "preprocess": "parcel build generator/literally.css --target css",
+    "watch": "nodemon --exec \"pnpm clean && pnpm build && pnpm generate && pnpm preprocess\" --watch src -e js,json,yml"
+  },
+  "keywords": [
+    "css",
+    "utility"
+  ],
+  "author": "Parkle Lee <phparkle@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-yaml": "^2.6.2",
+    "nodemon": "^2.0.19",
+    "parcel": "^2.6.2",
+    "rimraf": "^3.0.2"
+  }
+}
