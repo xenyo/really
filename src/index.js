@@ -13,4 +13,4 @@ const css = Object.entries(properties).map(([property, values]) => {
   }).join("\n");
 }).join("\n");
 
-fs.writeFileSync("generator/literally.css", css);
+fs.writeFileSync("dist/generator/literally.css", css);

@@ -8,8 +8,7 @@
   "browserslist": "defaults",
   "targets": {
     "generator": {
-      "context": "node",
-      "distDir": "generator"
+      "context": "node"
     },
     "css": {
       "context": "browser",
@@ -17,11 +16,12 @@
     }
   },
   "scripts": {
-    "clean": "rimraf generator dist",
-    "build": "parcel build src/index.js --target generator",
-    "generate": "node generator/index.js",
-    "preprocess": "parcel build generator/literally.css --target css",
-    "watch": "nodemon --exec \"pnpm clean && pnpm build && pnpm generate && pnpm preprocess\" --watch src -e js,json,yml"
+    "clean": "rimraf dist",
+    "compile": "parcel build src/index.js --target generator",
+    "generate": "node dist/generator/index.js",
+    "preprocess": "parcel build dist/generator/literally.css --target css",
+    "build": "pnpm clean && pnpm compile && pnpm generate && pnpm preprocess",
+    "watch": "nodemon --exec \"pnpm build\" --watch src -e js,json,yml"
   },
   "keywords": [
     "css",
