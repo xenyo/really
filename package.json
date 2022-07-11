@@ -15,6 +15,10 @@
       "sourceMap": false
     }
   },
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
     "clean": "rimraf dist",
     "compile": "parcel build src/index.js --target generator",
