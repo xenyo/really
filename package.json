@@ -2,6 +2,10 @@
   "name": "literally.css",
   "version": "0.1.1",
   "description": "A CSS utility library that literally translates classes into styles.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/phparkle/literally.css.git"
+  },
   "engines": {
     "node": ">= 16"
   },
