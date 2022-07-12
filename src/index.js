@@ -4,7 +4,6 @@ const globalValues = require("./global-values.yml");
 
 const css = Object.entries(properties).map(([property, values]) => {
   return values
-    // .concat(globalValues)
     .map(value => {
       const classValue = value.toString()
         .replace(" ", "-")
@@ -17,3 +16,22 @@ const css = Object.entries(properties).map(([property, values]) => {
   }).join("\n");
 
 fs.writeFileSync("dist/generator/literally.css", css);
+
+const markdown = Object.entries(properties).map(([property, values]) => {
+  return values
+    .map(value => {
+      const classValue = value.toString().replace(" ", "-");
+      return [
+        `| ${property}-${classValue} | ${property}: ${value}; |`,
+        `| ${property}-${classValue}! | ${property}: ${value} !important; |`,
+      ].join("\n");
+    }).join("\n");
+  }).join("\n");
+
+fs.writeFileSync("docs/classes.md", [
+  "# literally.css Class Reference",
+  "",
+  "| Class | Style |",
+  "| --- | --- |",
+  markdown,
+].join("\n"));
