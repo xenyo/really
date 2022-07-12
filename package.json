@@ -1,6 +1,6 @@
 {
   "name": "literally.css",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A CSS utility library that literally translates classes into styles.",
   "repository": {
     "type": "git",
