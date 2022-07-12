@@ -1,7 +1,7 @@
 {
   "name": "literally.css",
   "version": "0.0.2",
-  "description": "CSS utility library that literally translates to CSS.",
+  "description": "A CSS utility library where classes are literally translated into styles.",
   "engines": {
     "node": ">= 16"
   },
