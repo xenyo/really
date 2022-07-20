@@ -256,6 +256,30 @@
 | all-unset! | all: unset !important; |
 | all-revert | all: revert; |
 | all-revert! | all: revert !important; |
+| overflow-visible | overflow: visible; |
+| overflow-visible! | overflow: visible !important; |
+| overflow-hidden | overflow: hidden; |
+| overflow-hidden! | overflow: hidden !important; |
+| overflow-scroll | overflow: scroll; |
+| overflow-scroll! | overflow: scroll !important; |
+| overflow-auto | overflow: auto; |
+| overflow-auto! | overflow: auto !important; |
+| overflow-x-visible | overflow-x: visible; |
+| overflow-x-visible! | overflow-x: visible !important; |
+| overflow-x-hidden | overflow-x: hidden; |
+| overflow-x-hidden! | overflow-x: hidden !important; |
+| overflow-x-scroll | overflow-x: scroll; |
+| overflow-x-scroll! | overflow-x: scroll !important; |
+| overflow-x-auto | overflow-x: auto; |
+| overflow-x-auto! | overflow-x: auto !important; |
+| overflow-y-visible | overflow-y: visible; |
+| overflow-y-visible! | overflow-y: visible !important; |
+| overflow-y-hidden | overflow-y: hidden; |
+| overflow-y-hidden! | overflow-y: hidden !important; |
+| overflow-y-scroll | overflow-y: scroll; |
+| overflow-y-scroll! | overflow-y: scroll !important; |
+| overflow-y-auto | overflow-y: auto; |
+| overflow-y-auto! | overflow-y: auto !important; |
 | top-0 | top: 0; |
 | top-0! | top: 0 !important; |
 | top-50% | top: 50%; |
