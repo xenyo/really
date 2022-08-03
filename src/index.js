@@ -8,10 +8,7 @@ const css = Object.entries(properties).map(([property, values]) => {
       const classValue = value.toString()
         .replace(" ", "-")
         .replace(/([^0-9a-zA-Z_-])/, "\\$1");
-      return [
-        `.${property}-${classValue} { ${property}: ${value}; }`,
-        `.${property}-${classValue}\\! { ${property}: ${value} !important; }`,
-      ].join("\n");
+      return `.${property}-${classValue} { ${property}: ${value} !important; }`;
     }).join("\n");
   }).join("\n");
 
@@ -21,10 +18,7 @@ const markdown = Object.entries(properties).map(([property, values]) => {
   return values
     .map(value => {
       const classValue = value.toString().replace(" ", "-");
-      return [
-        `| ${property}-${classValue} | ${property}: ${value}; |`,
-        `| ${property}-${classValue}! | ${property}: ${value} !important; |`,
-      ].join("\n");
+      return `| ${property}-${classValue} | ${property}: ${value} !important; |`;
     }).join("\n");
   }).join("\n");
 
