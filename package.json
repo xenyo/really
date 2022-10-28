@@ -1,10 +1,10 @@
 {
-  "name": "literally.css",
+  "name": "@xenyo/really",
   "version": "0.3.0",
-  "description": "A CSS utility library that literally translates classes into styles.",
+  "description": "A simple CSS utility library.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/phparkle/literally.css.git"
+    "url": "git://github.com/xenyo/really.git"
   },
   "engines": {
     "node": ">= 16"
@@ -27,7 +27,7 @@
     "clean": "rimraf dist",
     "compile": "parcel build src/index.js --target generator",
     "generate": "node dist/generator/index.js",
-    "preprocess": "parcel build dist/generator/literally.css --target css",
+    "preprocess": "parcel build dist/generator/really.css --target css",
     "build": "pnpm clean && pnpm compile && pnpm generate && pnpm preprocess",
     "watch": "nodemon --exec \"pnpm build\" --watch src -e js,json,yml"
   },
@@ -38,9 +38,9 @@
   "author": "Parkle Lee <phparkle@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@parcel/transformer-yaml": "^2.6.2",
-    "nodemon": "^2.0.19",
-    "parcel": "^2.6.2",
+    "@parcel/transformer-yaml": "^2.7.0",
+    "nodemon": "^2.0.20",
+    "parcel": "^2.7.0",
     "rimraf": "^3.0.2"
   }
 }

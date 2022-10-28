@@ -21,15 +21,6 @@ cursor:
   - pointer
 outline:
   - none
-text-overflow:
-  - clip
-  - ellipsis
-user-select:
-  - all
-  - auto
-  - contain
-  - none
-  - text
 
 # CSS Box Model
 margin:
@@ -37,16 +28,12 @@ margin:
   - auto
 margin-bottom:
   - 0
-  - auto
 margin-left:
   - 0
-  - auto
 margin-right:
   - 0
-  - auto
 margin-top:
   - 0
-  - auto
 padding:
   - 0
 padding-bottom:
@@ -70,15 +57,9 @@ opacity:
 display:
   - block
   - flex
-  - flow-root
   - grid
   - inline
-  - inline-block
-  - inline-flex
-  - inline-grid
-  - list-item
   - none
-  - table
 
 # CSS Flexible Box Layout
 flex-direction:
@@ -98,42 +79,49 @@ flex-grow:
 order:
   - 0
   - 1
-  - 2
-  - 3
 justify-content:
   - center
-  - end
-  - left
-  - normal
-  - right
-  - space-around
-  - space-between
-  - space-evenly
   - start
+  - end
+  - space-between
+  - space-around
+  - space-evenly
   - stretch
 align-content:
-  - baseline
   - center
+  - start
   - end
-  - normal
+  - baseline
   - space-around
   - space-between
   - space-evenly
-  - start
   - stretch
-align-items:
-  - normal
+justify-items:
   - stretch
   - center
   - start
   - end
   - baseline
-align-self:
-  - auto
-  - normal
+align-items:
+  - stretch
   - center
   - start
   - end
+  - baseline
+justify-self:
+  - auto
+  - center
+  - start
+  - end
+  - baseline
+  - stretch
+align-self:
+  - auto
+  - center
+  - start
+  - end
+  - baseline
+  - stretch
 gap:
   - 0
 row-gap:
@@ -170,9 +158,6 @@ object-fit:
   - scale-down
 
 # CSS Lists
-list-style-position:
-  - inside
-  - outside
 list-style-type:
   - circle
   - decimal
@@ -180,26 +165,17 @@ list-style-type:
   - none
   - square
 
-# CSS Miscellaneous
-all:
-  - initial
-  - inherit
-  - unset
-  - revert
-
 # CSS Overflow
 overflow:
   - visible
   - hidden
   - scroll
   - auto
-
 overflow-x:
   - visible
   - hidden
   - scroll
   - auto
-
 overflow-y:
   - visible
   - hidden
@@ -209,20 +185,12 @@ overflow-y:
 # CSS Positioned Layout
 top:
   - 0
-  - 50%
-  - 100%
 left:
   - 0
-  - 50%
-  - 100%
 right:
   - 0
-  - 50%
-  - 100%
 bottom:
   - 0
-  - 50%
-  - 100%
 inset:
   - 0
 float:
@@ -243,8 +211,6 @@ position:
 z-index:
   - 0
   - 1
-  - 2
-  - 3
 transform:
   - none
 
@@ -265,38 +231,14 @@ vertical-align:
   - bottom
 
 # CSS Text
-letter-spacing:
-  - normal
-overflow-wrap:
-  - normal
-  - break-word
-  - anywhere
 text-align:
-  - start
-  - end
   - justify
   - left
   - right
   - center
-text-indent:
-  - 0
-  - 100%
-white-space:
-  - normal
-  - nowrap
-  - pre
-  - pre-wrap
-  - pre-line
 
 # CSS Text Decoration
 text-decoration:
-  - none
-  - solid
-  - double
-  - dotted
-  - dashed
-  - wavy
-text-decoration-line:
   - none
   - underline
   - overline
@@ -304,31 +246,6 @@ text-decoration-line:
 text-shadow:
   - none
 
-# CSS Transforms
-backface-visibility:
-  - hidden
-  - visible
-perspective:
-  - none
-
 # CSS Transitions
 transition:
-  - none
-
-# CSS Writing Modes
-direction:
-  - ltr
-  - rtl
-writing-mode:
-  - horizontal-tb
-  - vertical-rl
-  - vertical-lr
-text-orientation:
-  - mixed
-  - upright
-
-# Filter Effects
-backdrop-filter:
-  - none
-filter:
   - none

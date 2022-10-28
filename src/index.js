@@ -1,6 +1,5 @@
 const fs = require("fs");
 const properties = require("./properties.yml");
-const globalValues = require("./global-values.yml");
 
 const css = Object.entries(properties).map(([property, values]) => {
   return values
@@ -12,18 +11,20 @@ const css = Object.entries(properties).map(([property, values]) => {
     }).join("\n");
   }).join("\n");
 
-fs.writeFileSync("dist/generator/literally.css", css);
+fs.writeFileSync("dist/generator/really.css", css);
 
-const markdown = Object.entries(properties).map(([property, values]) => {
-  return values
-    .map(value => {
-      const classValue = value.toString().replace(" ", "-");
-      return `| ${property}-${classValue} | ${property}: ${value} !important; |`;
+const markdown = Object.entries(properties)
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([property, values]) => {
+    return values
+      .map(value => {
+        const classValue = value.toString().replace(" ", "-");
+        return `| ${property}-${classValue} | \`${property}: ${value} !important;\` |`;
+      }).join("\n");
     }).join("\n");
-  }).join("\n");
 
-fs.writeFileSync("docs/classes.md", [
-  "# literally.css Class Reference",
+fs.writeFileSync("class-reference.md", [
+  "# really.css Class Reference",
   "",
   "| Class | Style |",
   "| --- | --- |",
