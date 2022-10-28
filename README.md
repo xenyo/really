@@ -1,6 +1,6 @@
 # really.css
 
-![](https://img.badgesize.io/xenyo/really/master/dist/css/really.css.svg?compression=gzip)
+![](https://img.badgesize.io/xenyo/really/main/dist/css/really.css.svg?compression=gzip)
 
 
 A really simple CSS utility library.
