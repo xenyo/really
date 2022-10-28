@@ -3,7 +3,7 @@
 ![](https://img.badgesize.io/xenyo/really/master/dist/css/really.css.svg?compression=gzip)
 
 
-A simple CSS utility library.
+A really simple CSS utility library.
 
 ## Features
 

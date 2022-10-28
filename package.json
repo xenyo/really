@@ -1,7 +1,7 @@
 {
   "name": "@xenyo/really",
   "version": "0.3.0",
-  "description": "A simple CSS utility library.",
+  "description": "A really simple CSS utility library.",
   "repository": {
     "type": "git",
     "url": "git://github.com/xenyo/really.git"
