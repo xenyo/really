@@ -4,7 +4,7 @@
   "description": "A really simple CSS utility library.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/xenyo/really.git"
+    "url": "https://github.com/xenyo/really.git"
   },
   "engines": {
     "node": ">= 16"
