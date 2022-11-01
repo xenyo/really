@@ -7,7 +7,7 @@ A *really* simple CSS utility library.
 
 ## Features
 
-### One-to-one mapping from classes to styles, really.
+### One-to-one mapping from classes to styles. Really!
 
 All classes in really.css map directly to a CSS property and value.
 
@@ -18,3 +18,7 @@ See [Class Reference](class-reference.md) for the full list.
 ### Trivial values only
 
 By only including trivial values like `0` and `none`, really.css avoids making any assumptions about your design system.
+
+### Really tiny
+
+At under 2kb gzipped, really.css is designed to have minimal impact on performance.
