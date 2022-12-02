@@ -9,7 +9,7 @@ A *really* simple CSS utility library.
 
 ### One-to-one mapping from classes to styles. Really!
 
-All classes in really.css map directly to a CSS property and value.
+All classes in really.css map directly to a single CSS property and value.
 
 For example, the `display-none` class applies `display: none !important`, `margin-0` applies `margin: 0 !important` and so on.
 
