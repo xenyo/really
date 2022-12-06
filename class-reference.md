@@ -108,6 +108,10 @@
 | margin-left-0 | `margin-left: 0 !important;` |
 | margin-right-0 | `margin-right: 0 !important;` |
 | margin-top-0 | `margin-top: 0 !important;` |
+| max-height-none | `max-height: none !important;` |
+| max-width-none | `max-width: none !important;` |
+| min-height-none | `min-height: none !important;` |
+| min-width-none | `min-width: none !important;` |
 | object-fit-contain | `object-fit: contain !important;` |
 | object-fit-cover | `object-fit: cover !important;` |
 | object-fit-fill | `object-fit: fill !important;` |

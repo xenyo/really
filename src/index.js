@@ -36,11 +36,11 @@ const taxonomy = Object.entries(properties)
   .map(([property, values]) => {
     return values.map(value => {
       const classValue = value.toString().replace(" ", "-");
-      return `${property}-${classValue}`;
+      return `${property}-${classValue},`;
     }).join("\n");
   }).join("\n");
 
 fs.writeFileSync("taxonomy.csv", [
-  "name",
+  "name,",
   taxonomy,
 ].join("\n"));
